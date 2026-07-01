@@ -1,0 +1,4 @@
+biopython
+pandas       # optional — for Excel export
+openpyxl     # optional — for Excel export
+mafft        # optional — for alignment (must be on PATH)
