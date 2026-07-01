@@ -155,5 +155,5 @@ For phylogenetic work, use `selected_standard_header.fasta` if your alignment to
 
 ## Notes
 
-- `normalize_country()` trims GenBank's `"Country: Region"` formatting down to just the country (e.g. `Mozambique: Maputo` → `Mozambique`), and `normalize_text()` lowercases and strips common Portuguese diacritics (ç, ã, á, é, etc.) before comparing country names. `country_matches()` applies an alias table on top of this to catch variants that diacritic-stripping alone cannot resolve — for example, `Moçambique` normalises to `mocambique` (ç→c), which is mapped back to `mozambique` before comparison.
-- To switch from VP4 (P-type) to VP7 (G-type), change the gene prompt input to `VP7` — the pipeline auto-detects which genotype letter to filter on.
+- `normalize_country()` trims GenBank's `"Country: Region"` formatting down to just the country (e.g. `Mozambique: Maputo` → `Mozambique`), and `normalize_text()` lowercases and strips common Portuguese diacritics (ç, ã, á, é, etc.) before comparing country names. `country_matches()` applies an alias table on top of this to catch variants that diacritic-stripping alone cannot resolve. For example, `Moçambique` normalises to `mocambique` (ç→c), which is mapped back to `mozambique` before comparison.
+- To switch from VP4 (P-type) to VP7 (G-type), change the gene prompt input to `VP7`. The pipeline auto-detects which genotype letter to filter on.
